@@ -1,0 +1,110 @@
+/*resetear los margenes del navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*iconos bootstrap*/
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+/*HEADER, padre*/
+
+.header {
+    z-index:100; /*para que el header siempre quede arriba y se superponga a todo lo demás*/
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-between; /*hace que separen*/
+    flex-direction: column;  /*con column hago que se ponga en columna el div .fila y el nav*/
+    align-items: center;
+    padding: 7px 0px;
+    border-bottom: 1px solid rgb(166, 193, 206);
+    background-color: rgb(18, 21, 24);
+
+}
+
+/*dentro del header*/
+.fila {
+    display: flex;
+    justify-content: space-between;
+    /*le di width 90% asi la caja tiene un tamaño,
+    solo con flex por defecto se pega al contenido
+    no le di 100% asi no queda tan pegadito al borde, pero si te gusta asi cambialo a 100!*/
+    width: 90%;
+}
+
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+
+/*para el logo que te lleva al inicio*/
+
+.logo:hover{
+    transform: scale(1.1,1.1);
+}
+
+.principal{
+    flex-direction: column;
+
+}
+
+.principal h2 {
+    font-size: 20px;
+    color: beige;
+}
+
+.principal h1 {
+    text-align: center;
+    font-size: 30px;
+    color: beige;
+    justify-content: center;
+}
+
+
+
+
+/*footer*/
+
+footer {
+    /*grid area del template*/
+    grid-area: footer;
+    text-align: justify;
+    background-color: black;
+
+}
+
+/*FOOTER BOOTSTRAP*/
+.bi-instagram{
+    font-size: 30px;
+    color: rgb(194, 205, 236);
+    }
+    
+    .ig{
+        font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(247, 248, 237);
+    }
+    
+    .bi-whatsapp{
+        font-size: 30px;
+        color:rgb(194, 205, 236);
+    }
+    
+    .wsp{
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(247, 248, 237);
+    }
+    
+    
+
+/*color del body*/
+    body {
+        background-color: blanchedalmond;
+    }
+    
