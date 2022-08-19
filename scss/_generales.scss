@@ -66,22 +66,18 @@
 }
 
 
-
-
 /*footer*/
-
 footer {
     /*grid area del template*/
     grid-area: footer;
     text-align: justify;
     background-color: black;
-
 }
 
 /*FOOTER BOOTSTRAP*/
 .bi-instagram{
     font-size: 30px;
-    color: rgb(194, 205, 236);
+    color:$iconos-footer;
     }
     
     .ig{
@@ -92,7 +88,7 @@ footer {
     
     .bi-whatsapp{
         font-size: 30px;
-        color:rgb(194, 205, 236);
+        color:$iconos-footer;
     }
     
     .wsp{
@@ -102,7 +98,6 @@ footer {
     }
     
     
-
 /*color del body*/
     body {
         background-color: blanchedalmond;
