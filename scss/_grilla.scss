@@ -1,5 +1,5 @@
 
-.layout {
+.layou{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 25vh auto 70px;
@@ -30,22 +30,29 @@
 }
 
 
-.main_texto h3 {
+/*EXTEND*/
+.main_extend{
     color: black;
-    font-size: 30px;
     margin-left: 20px;
+    height: 20%;
+
+}
+
+
+.main_texto h3 {
+@extend .main_extend;
+    font-size: 30px;
     font-family: $texto-index;
 }
 
 .main_texto{
-    color: black;
+    @extend .main_extend;
     margin-top: 30px;
-    margin-left: 20px;
     margin-right: 40px;
 }
 
 .main_texto p{
-color: black;
+    @extend .main_extend;
 font-size: 18px;
 font-family: $texto-index;
 }
@@ -63,11 +70,6 @@ height: 100%;
 }
 
 
-.main_texto{
-    height: 20%;
-
-}
-
 .carouselslide{
     display: flex;
     align-items: center;
@@ -77,22 +79,27 @@ height: 100%;
 
 
 .carousel-inner{
-
     height: 50%;
     width: 50%;
-
 }
 
 
-
 /*MAIN CONTACTO*/
-.main_contact .formulario {
+
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     height: 90%;
     width: 100%;
     align-items: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 400px;
+    flex-direction: column;
+    padding-top: 100px;
+    height: 60%;
+    border-bottom: 1px solid rgb(131, 161, 216);
 }
 
 
@@ -101,18 +108,6 @@ height: 100%;
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     background-color: rgb(131, 161, 216);
-    border-bottom: 1px solid rgb(131, 161, 216);
-}
-
-
-.formulario {
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 400px;
-    flex-direction: column;
-    padding-top: 100px;
-    height: 60%;
-
 }
 
 
@@ -131,22 +126,24 @@ height: 100%;
     height:70%;
     width:90%;
     }
-    
+
+/*MIXIN*/
+    @mixin altura_fotos ($altura){
+        width: 50%;
+    }
+
     .fotouno{
-    height: 40%;
-    width: 50%;
+        @include altura_fotos(40%)
     }
     
     
     .fotodos{
-        height: 90%;
-        width: 50%;
+        @include altura_fotos(90%)
     }
     
     
     .fototres{
-        height: 40%;
-        width: 50%;
+        @include altura_fotos(40%)
     }
 
 
