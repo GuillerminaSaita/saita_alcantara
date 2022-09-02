@@ -253,6 +253,7 @@ body {
     flex-direction: row;
   }
 }
+/*responsive contacto*/
 li {
   display: inline-block;
   background-color: beige;
