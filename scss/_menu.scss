@@ -1,19 +1,22 @@
+/*tamaño logo navbar*/
+.logo-navbar{
+    height:80px ;
+    width:80px ;
+}
 
+
+
+/* anterior menu, sin bootstrap
 li {
-    display: inline-block;
-    background-color:beige;
-   /*lo que mide cada boton del nav*/
-    width: 180px; 
-    height: 30px;
-
     a {
-        text-decoration: none;  /*para que no tenga las palabras azules con subrayado*/
+        text-decoration: none;  /*para que no tenga las palabras azules con subrayado
         color: rgb(3, 3, 3);
-        
-    &:hover{   /*la & se usa para esto del hover, no hay que poner el nombre de "a" de vuelta para anidarlo*/
+    &:hover{   la & se usa para esto del hover, no hay que poner el nombre de "a" de vuelta para anidarlo
     color: black;
     }
     }
+ */
+
 
 /*TRANSFORMACIONES*/
 /*estilo para cuando apoyo el mouse para cada boton li del nav*/
@@ -41,6 +44,5 @@ li {
     background-color: $fondo-menu;
     transform: scale(1.1,1.1);
 }
-
 }
 

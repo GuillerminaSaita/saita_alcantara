@@ -157,15 +157,15 @@ body {
 .carouselslide {
   display: flex;
   align-items: center;
-  width: 50%;
-  min-height: 600px;
+  width: 100%;
 }
 
-.carousel-inner {
-  height: 50%;
-  width: 50%;
+/*NO PONER ESTO
+.carousel-inner{
+    height: 50%;
+    width: 50%;
 }
-
+*/
 /*MAIN CONTACTO*/
 .formulario {
   display: flex;
@@ -254,12 +254,12 @@ body {
   }
 }
 /*responsive contacto*/
+.logo-navbar {
+  height: 80px;
+  width: 80px;
+}
+
 li {
-  display: inline-block;
-  background-color: beige;
-  /*lo que mide cada boton del nav*/
-  width: 180px;
-  height: 30px;
   /*TRANSFORMACIONES*/
   /*estilo para cuando apoyo el mouse para cada boton li del nav*/
 }
