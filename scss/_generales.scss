@@ -12,12 +12,15 @@
 /*HEADER, padre*/
 
 .header {
-    z-index:100; /*para que el header siempre quede arriba y se superponga a todo lo demás*/
+    z-index: 100;
+    /*para que el header siempre quede arriba y se superponga a todo lo demás*/
     position: sticky;
     top: 0%;
     display: flex;
-    justify-content: space-between; /*hace que separen*/
-    flex-direction: column;  /*con column hago que se ponga en columna el div .fila y el nav*/
+    justify-content: space-between;
+    /*hace que separen*/
+    flex-direction: column;
+    /*con column hago que se ponga en columna el div .fila y el nav*/
     align-items: center;
     padding: 7px 0px;
     border-bottom: 1px solid rgb(166, 193, 206);
@@ -44,11 +47,11 @@
 
 /*para el logo que te lleva al inicio*/
 
-.logo:hover{
-    transform: scale(1.1,1.1);
+.logo:hover {
+    transform: scale(1.1, 1.1);
 }
 
-.principal{
+.principal {
     flex-direction: column;
 
 }
@@ -71,42 +74,88 @@ footer {
     /*grid area del template*/
     grid-area: footer;
     text-align: justify;
-    background-color: black;
+    background-color: #212529; /*es el color que viene en el navbar*/
 }
 
 /*FOOTER BOOTSTRAP*/
-.bi-instagram{
-    font-size: 30px;
-    color:$iconos-footer;
-    }
-    
-    .ig{
-        font-size: 15px;
+
+.footer{
+    margin-left: 7px;
+}
+
+.titulo-footer{
+    padding: 5px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(247, 248, 237);
-    }
-    
-    .bi-whatsapp{
-        font-size: 30px;
-        color:$iconos-footer;
-    }
-    
-    .wsp{
-        font-size: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(247, 248, 237);
-    }
-    
-    
+    color: $iconos-footer;
+}
+
+
+.bi-instagram {
+    width: 15px;
+    color: $iconos-footer;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.instagram{
+    color: $iconos-footer;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.bi-instagram::before{
+    width:20px;
+    height:20px;
+    margin-right: 15px;
+    color: rgb(238, 225, 191);
+}
+
+
+.bi-facebook {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $iconos-footer;
+    font-size: 25px;
+}
+
+.facebook{
+    color: $iconos-footer;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.bi-facebook::before{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    color: rgb(238, 225, 191);
+}
+
+
+.bi-whatsapp {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $iconos-footer;
+    font-size: 25px;
+}
+
+.wsp{
+    color: $iconos-footer;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bi-whatsapp::before{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    color:rgb(238, 225, 191);
+}
+
+
 /*color del body*/
-    body {
-        background-color: rgb(209, 205, 199);
-    }
-    
-
-
-
-
-
-
-    
+body {
+    background-color: rgb(252, 247, 224);
+}
