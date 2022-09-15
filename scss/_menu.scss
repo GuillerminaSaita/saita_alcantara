@@ -1,54 +1,20 @@
-/*tamaño logo navbar*/
+/*LOGO NAVBAR*/
 .logo-navbar{
-    height:80px ;
-    width:80px ;
-}
+    height:75px;
+    width:75px;
 
+    &:hover{
+        transform: scale(1.1,1.1);
+    }
+    }
+
+.nav-item:hover{
+    transform: scale(1.1,1.1);
+}
 
 .navbar{
     position: sticky;
     top: 0%;
-   
+    z-index:999;  /*para que quedé siempre arriba y no se le superponga nada*/
 }
-
-
-/* anterior menu, sin bootstrap
-li {
-    a {
-        text-decoration: none;  /*para que no tenga las palabras azules con subrayado
-        color: rgb(3, 3, 3);
-    &:hover{   la & se usa para esto del hover, no hay que poner el nombre de "a" de vuelta para anidarlo
-    color: black;
-    }
-    }
- */
-
-
-/*TRANSFORMACIONES*/
-/*estilo para cuando apoyo el mouse para cada boton li del nav*/
-
-.inicio:hover{
-    background-color:$fondo-menu;
-    transform: scale(1.1,1.1);
-}
-
-.productos:hover{
-    background-color:$fondo-menu;
-    transform: scale(1.1,1.1);
-}
-
-.galeria:hover{
-    background-color:$fondo-menu ;
-    transform: scale(1.1,1.1);
-}
-.contacto:hover{
-    background-color:$fondo-menu ;
-    transform: scale(1.1,1.1);
-}
-
-.mapa:hover{
-    background-color: $fondo-menu;
-    transform: scale(1.1,1.1);
-}
-
 

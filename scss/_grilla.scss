@@ -1,40 +1,31 @@
-
-.layou{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 25vh auto 70px;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-}
-
-.header {
-    grid-area: header;
-    width: 100%;
-}
-
-
-/*TITULO: ALCANTARA AROMAS, RESALTANDO LO ESENCIAL*/
-
-.titulo-index{
+/*TITULO: INDEX*/
+.titulo-index {
     color: rgb(255, 255, 241);
     font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(166, 166, 161);
-}
+    background-color: rgb(166, 166, 161);   
+    }
 
-
-.titulo-index h1{
-    border-left: 50px;
-}
+    h1{
+        border-left:50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 
 
 
 /*TITULO:PRODUCTOS*/
+.titulo-productos {
+    h3 {
+        color: rgb(255, 255, 241);
+        font-size: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: rgb(166, 166, 161);
+    }
+}
 
-.container-fluid{
-    h3{
+/*TITULO GALERIA*/  /*no sé por qué no me lo toma*/
+.titulo-galeria {
+    h3 {
         color: rgb(255, 255, 241);
         font-size: 25px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -44,37 +35,44 @@
 
 
 /*TITULO:CONTACTO*/
-
-.titulo-contacto{
-    h3{
+.titulo-contacto {
+    h3 {
         color: rgb(255, 255, 241);
-        font-size: 25px;
+        font-size: 20px;
         background-color: rgb(166, 166, 161);
         text-align: center;
-        font-family: 'Tiro Devanagari Hindi', serif;
-        }
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    
-   
-
-
-/*MAIN INDEX*/
-
-.main{
-    /*grid area del template*/
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    /* height: 650px; */
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 0;
-    min-height:500px;
 }
 
 
+/*TITULO MAPA*/
+.titulo_mapa {
+    color: rgb(255, 255, 241);
+    font-size: 20px;
+    background-color: rgb(166, 166, 161);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*MAIN INDEX*/
+/*
+.main {
+    /*grid area del template
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    /* height: 650px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0;
+    min-height: 500px;
+}*/
+
+
 /*EXTEND*/
-.main_extend{
+.main_extend {
     color: black;
     margin-left: 20px;
     height: 20%;
@@ -83,169 +81,143 @@
 
 
 .main_texto h3 {
-@extend .main_extend;
+    @extend .main_extend;
     font-size: 30px;
     font-family: $texto-index;
 }
 
-.main_texto{
+.main_texto {
     @extend .main_extend;
     margin-top: 30px;
     margin-right: 40px;
 }
 
-.main_texto p{
+.main_texto p {
     @extend .main_extend;
-font-size: 18px;
-font-family: $texto-index;
+    font-size: 18px;
+    font-family: $texto-index;
 }
 
 /*MAIN INDEX: CARRUSEL BOOTSTRAP*/
-
-.foto1{
-width: 100%;
-height: 100%;
+.foto1 {
+    width: 100%;
+    height: 100%;
 }
 
-.foto2{
+.foto2 {
     width: 100%;
     height: 100%;
 }
 
 
-
-.margin-index{
+.margin-index {
     padding: 50px;
 }
-.carouselslide{
+
+.carouselslide {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-/*NO PONER ESTO
-.carousel-inner{
-    height: 50%;
-    width: 50%;
-}
-*/
 
 /*MAIN CONTACTO*/
-
 .formulario {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    height: 90%;
+    height: 80%;
     width: 100%;
     align-items: center;
-    font-size: 20px;
-    font-family:'Qwitcher Grypen', cursive;
-    height: 400px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     flex-direction: column;
-    padding-top: 100px;
-    height: 60%;
-    border-bottom: 1px solid rgb(131, 161, 216);
+    padding-top: 80px;
+    margin-bottom: 40px;
 }
 
-
-
-/*esto lo explico en el after, no uso el buttom, no lo entiendo, no me aparece para apretar el boton*/
 
 .boton_after {
     margin-top: 1.5rem;
-    background-color: rgb(131, 161, 216);
+    background-color: rgb(188, 187, 159);
     padding: 0.4rem 1rem;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 
-    /*MAIN GALERÍA*/
-.fotos{
-    height:70%;
-    width:90%;
-    }
+/*MIXIN (lo habia usado pero ahora no me sirve, puse bootstrap*/
+/*
+@mixin altura_fotos ($altura) {
+    width: 50%;
+}
 
-/*MIXIN*/
-    @mixin altura_fotos ($altura){
-        width: 50%;
-    }
+.fotouno {
+    @include altura_fotos(40%)
+}
 
-    .fotouno{
-        @include altura_fotos(40%)
-    }
-    
-    
-    .fotodos{
-        @include altura_fotos(90%)
-    }
-    
-    
-    .fototres{
-        @include altura_fotos(40%)
-    }
+
+.fotodos {
+    @include altura_fotos(90%)
+}
+
+
+.fototres {
+    @include altura_fotos(40%)
+}
 
 
 
-    /*RESPONSIVE DESIGN*/
-/*responsive index*/
-@media only screen and (max-width:600px){
+/*RESPONSIVE DESIGN*/
+/*responsive index (no uso las media queries porque con bootstrap ya es responsive*/ 
+/*
+@media only screen and (max-width:600px) {
 
-    .menu{
-    grid-template-columns: 70%;
-    grid-template-rows: 10% 10% 10% 10% 10%;
-    grid-template-areas:"inicio"
-    "productos"
-    "galería"
-    "contacto"
-    "mapa";
-    align-content: space-around;
-    align-items: center;
+    .menu {
+        grid-template-columns: 70%;
+        grid-template-rows: 10% 10% 10% 10% 10%;
+        grid-template-areas: "inicio"
+            "productos"
+            "galería"
+            "contacto"
+            "mapa";
+        align-content: space-around;
+        align-items: center;
     }
-    
-    .header{
-        height:350px;
+
+    .header {
+        height: 350px;
     }
 
 }
-    
-    
-@media only screen and (min-width: 600px){
-    
-    .header{
+
+
+@media only screen and (min-width: 600px) {
+
+    .header {
         height: 200px;
     }
-    .main_texto{
+
+    .main_texto {
         padding: 0;
     }
-    .menu{
-       flex-wrap: wrap;
+
+    .menu {
+        flex-wrap: wrap;
     }
 }
-    
-    
+}
 
-/*responsive galeria*/
+/*responsive galeria
+@media only screen and (max-width:600px) {
 
-@media only screen and (max-width:600px){
-
-    .fotos{
-    flex-direction: column;    
+    .fotos {
+        flex-direction: column;
     }
 }
-    
-    @media only screen and (min-width:600px){
-    
-    .fotos{
-     flex-direction: row;
-        }
-}
 
-/*responsive contacto*/
+@media only screen and (min-width:600px) {
 
-
-    
-
-
-
-
+    .fotos {
+        flex-direction: row;
+    }
+}}*/
